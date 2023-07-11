@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <img src="Rick-And-Morty-Logo.png">
-        <form class="d-flex" role="search">
+        <form id="search-form" class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
             <button class="btn btn-outline-success" type="submit" id="searchButton">Buscar</button>
         </form>
@@ -27,8 +27,15 @@
         </header>
     </header>
     <main>
-        <div class="container" style="margin-top: 5px;">
+        <div class="container" style="margin-top: 5px;" id="results">
+
         </div>
+
+        
+            <div class="see-more">
+              <button class="btn btn-light" id="loadMoreButton">Carregar Mais</button>
+       
+       </div>
     </main>
     <footer>
         <img src="portal(1).png">
