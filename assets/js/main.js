@@ -92,8 +92,11 @@ fetch("https://rickandmortyapi.com/api/character", {
             updateLoadMoreButton();
           })
           .catch(error => {
-            console.log('Ocorreu um erro:', error);
-          });
+              console.log('Ocorreu um erro:', error);
+              window.location.href = 'error404.html';
+            });
+            
+        
       }
       
       // Função para atualizar o estado do botão "Carregar Mais"
